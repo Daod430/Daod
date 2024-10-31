@@ -1,0 +1,6 @@
+@DaodApi_HostAddress = http://localhost:5047
+
+GET {{DaodApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

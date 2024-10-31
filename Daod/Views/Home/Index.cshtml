@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (ViewBag.Message != null)
+{
+    <p>@ViewBag.Message</p>
+}
+<form asp-action="SubmitForm" method="post">
+    <div>
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" value="@Model?.Name" required />
+    </div>
+    <div>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" value="@Model?.Email" required />
+    </div>
+    <button type="submit">Submit</button>
+</form>
